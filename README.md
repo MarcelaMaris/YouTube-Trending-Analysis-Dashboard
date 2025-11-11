@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="cover_youtube.png" width="100%" alt="E-Commerce Analytics Dashboard cover">
+</p>
+
 # 📺 YouTube Trends Dashboard — Global Video Category Analysis
 
 ![Tableau](https://img.shields.io/badge/Tableau-Dashboard-orange)
