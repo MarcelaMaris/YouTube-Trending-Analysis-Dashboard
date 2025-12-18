@@ -1,91 +1,115 @@
 <p align="center">
-  <img src="cover_youtube.png" width="100%" alt="E-Commerce Analytics Dashboard cover">
+  <img src="cover_youtube.png" width="100%" alt="YouTube Trends Dashboard cover">
 </p>
 
-# 📺 YouTube Trends Dashboard — Global Video Category Analysis
+## <img src="icons/dashboard.png" width="50">  &nbsp;&nbsp;YouTube Trends Dashboard — Global Video Category Analysis
+<br>
 
-![Tableau](https://img.shields.io/badge/Tableau-Dashboard-orange)
-![Data Visualization](https://img.shields.io/badge/Data-Visualization-blue)
-![License](https://img.shields.io/badge/License-MIT-green)
+![Tableau](https://img.shields.io/badge/Tableau-Public%20Dashboard-0A3756?style=flat&logo=tableau&logoColor=F5F7FA&labelColor=E8AA3A)
+![Data](https://img.shields.io/badge/Data-CSV%20Aggregation-0A3756?style=flat&logo=files&logoColor=F5F7FA&labelColor=E8AA3A)
+![Visualisation](https://img.shields.io/badge/Visualisation-Area%20%7C%20Pie%20%7C%20Heatmap-0A3756?style=flat&logo=plotly&logoColor=F5F7FA&labelColor=E8AA3A)
+![Analytics](https://img.shields.io/badge/Analytics-Trends%20%7C%20Regional%20Insights-0A3756?style=flat&logo=academia&logoColor=F5F7FA&labelColor=E8AA3A)
 
-## 📌 Project Overview
-
-This project was developed as part of the **Data Analytics Bootcamp at [TripleTen](https://tripleten.com)**.
-It focuses on automating weekly analytics for **YouTube trending videos**, building a **Tableau dashboard** for ad-planning managers to track category trends and regional differences over time.
-
-The dashboard helps answer:
-
-* Which video categories trended most often last week?
-* How were they distributed among regions?
-* Which categories were especially popular in the United States?
-
-🔗 **Live Dashboard:** [YouTube Trends Dashboard (Tableau Public)](https://public.tableau.com/app/profile/marcela.stephanie.pereira.maris1628/viz/YoutubeTreendingDashboard-final/Dashboard1)
-📊 [**Open YouTube Trending Dashboard Presentation (OneDrive)**](https://1drv.ms/b/c/d1aeda57ea1dab69/ETe6SLqfANVPtnPp9PAoVTABSbvMgP2WEDA1WBingSMKIA?e=0Y2jAV)
-
----
-
-## 🎯 Objectives
-
-* Design and publish an **interactive Tableau dashboard** using raw event data.
-* Provide **time-based and regional filtering** to support daily video category analysis.
-* Build intuitive visualizations to explore **absolute counts and percentage trends**.
-* Automate insight extraction for campaign planning teams.
+> This project delivers a **Tableau Public dashboard** to support daily decision-making for  
+> video advertising planning managers.
+>
+> Using an aggregated YouTube trending dataset, the dashboard enables fast answers to:
+> - **Which categories were trending last week?**
+> - **How do trends differ across regions?**
+> - **Which categories are most popular in the United States?**
+>
+> It mirrors how a **Data Analyst / BI Analyst** would build a self-service reporting product:  
+> clear KPI context, interactive filters, and stakeholder-focused visuals.
 
 ---
 
-## 📊 Dashboard Features
+## <img src="icons/objectives.png" width="30">  &nbsp;&nbsp;Objectives
 
-* 📅 **Date & Country Filters** — affect all visuals simultaneously.
-* 🧮 **Trend History (absolute & %)** — stacked area charts showing category evolution over time.
-* 🌍 **Regional Distribution** — pie chart of trending videos by region.
-* 🔥 **Category × Country Heatmap** — highlights most frequent trending categories per region.
-* 🧠 **Fully interactive design** with tooltips and consistent color mapping.
-
----
-
-## 📂 Data Description
-
-**File:** `trending_by_time.csv`
-**Source:** Aggregated YouTube trending history table provided for Sprint 12.
-**Fields:**
-
-* `record_id` — unique row ID
-* `region` — country or geographic region
-* `trending_date` — date of trending event
-* `category_title` — YouTube video category
-* `videos_count` — number of trending videos on that date
-
-Data is refreshed **daily at 00:00 UTC** and stored locally before upload to Tableau.
+- Build and publish an **interactive Tableau dashboard** for weekly trend monitoring.
+- Provide **date and country filters** applied consistently across all views.
+- Visualise category trends in both **absolute volume** and **relative share**.
+- Enable stakeholders to compare **regional distributions** and identify market-specific patterns.
+- Deliver a dashboard layout aligned with a predefined visual prototype and reporting needs.
 
 ---
 
-## 🧩 Tools & Tech Stack
+## <img src="icons/features.png" width="30">  &nbsp;&nbsp;Dashboard Structure & Features
 
-* **Visualization:** Tableau Public
-* **Data Handling:** CSV aggregation, date grouping
-* **Dashboard Design:** stacked area charts, pie chart, crosstab heatmap
-* **Presentation:** Google Slides (summary insights)
+### Global controls
+- 📅 **Date filter** (applies to all charts)
+- 🌍 **Country/region filter** (applies to all charts)
+
+### Visual components
+1. **Trend History (Absolute)** — stacked area chart  
+   Tracks total trending videos by category across time.
+
+2. **Trending Videos by Country (Share)** — pie chart  
+   Shows the percentage distribution of trending videos across selected regions.
+
+3. **Trend History (%)** — 100% stacked area chart  
+   Shows each category’s share of total trending volume per day.
+
+4. **Country × Category Table (Heatmap Crosstab)**  
+   Highlights category intensity by region using colour-coded values.
+
+---
+
+## <img src="icons/dataset.png" width="30">  &nbsp;&nbsp;Dataset
+
+**File:** `trending_by_time.csv`  
+**Source:** Aggregated table from the YouTube database (bootcamp scenario).
+
+**Fields**
+- `record_id` — unique row identifier  
+- `region` — country or geographic region  
+- `trending_date` — date of trending appearance  
+- `category_title` — video category  
+- `videos_count` — number of trending videos per day, region, and category  
+
+**Refresh cadence:** updated every 24 hours (00:00 UTC).
 
 ---
 
-## 📌 Conclusions
+## <img src="icons/dashboard.png" width="30">  &nbsp;&nbsp;Access & Deliverables
 
-* Categories **Entertainment** and **Music** dominated global trends.
-* Regional differences were observed — e.g., **Education** in India and **Gaming** in Japan.
-* The dashboard enables **daily self-service exploration** by ad managers.
+🔗 **Live Tableau Public dashboard:**  
+https://public.tableau.com/app/profile/marcela.stephanie.pereira.maris1628/viz/YoutubeTreendingDashboard-final/Dashboard1
+
+📊 **Presentation (managerial insights):**  
+Open YouTube Trending Dashboard Presentation (OneDrive)
+
+---
+
+## <img src="icons/conclusions.png" width="30">  &nbsp;&nbsp;Key Insights
+
+- **Entertainment** and **Music** are the most recurrent trending categories globally.
+- The United States shows strong concentration in high-volume categories, while  
+  some regions display greater category diversity.
+- **Japan** and **Russia** exhibit broader distribution across categories compared to other markets.
+- **Comedy** stands out in certain countries (e.g., France and Japan), but is not dominant worldwide.
 
 ---
 
-## 💾 Repository Contents
+## <img src="icons/impact.png" width="30">  &nbsp;&nbsp;Business Impact
 
-```
-data/
- └── trending_by_time.csv
-docs/
- ├── Documentation_Project-Youtube_Trends.pdf
- ├── Presentation_Youtube_Trends.pdf
- └── README_data.md
-```
+- Automates recurring reporting, enabling **daily self-service exploration** for ad managers.
+- Improves speed and consistency of insight generation across regions and time windows.
+- Supports data-driven campaign planning by revealing **market-specific category preferences**.
+- Provides a reusable Tableau layout pattern for future trend monitoring dashboards.
 
 ---
+
+## <img src="icons/techstack.png" width="30">  &nbsp;&nbsp;Tech Stack
+
+- **BI & Visualisation:** Tableau Public  
+- **Data Handling:** CSV-based aggregation, date grouping  
+- **Dashboard Design:** stacked area charts, pie chart, crosstab heatmap  
+- **Version Control:** Git & GitHub  
+
+---
+
+<p align="center">
+  <sub>📊 Designed & developed by <b>Marcela Maris</b> — Data Analytics Portfolio</sub><br>
+  <sub><i>BI Dashboards • Trend Analysis • Stakeholder Reporting</i></sub>
+</p>
 
